@@ -1,6 +1,9 @@
 ol li {
     list-style: none;
 }
+.core {
+    position: relative;
+}
 /* 轮播图 */
 .showPic {
     position: relative;
@@ -82,4 +85,46 @@ ol li {
 }
 .showPic ol .current {
     background-color: hotpink;
+}
+
+/* 留言板 */
+.farewellMes {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 250px;
+    height: 496px;
+    border: 2px solid red;
+}
+
+/* 风景展示 */
+.showSchool {
+    position: relative;
+    height: 1100px;
+}
+.showSchool .scenNav {
+    width: 1200px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: pink;
+}
+.scenNav li {
+    float: left;
+    margin-left: 200px;
+    font-size: 30px;
+    line-height: 50px;
+}
+.scenNav li>a {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background-color: blue;
+}
+.scenNo1 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 1200px;
+    height: 1000px;
+    background-color: pink;
 }
