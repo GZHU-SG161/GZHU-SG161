@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1td3xz');
+  src:  url('fonts/icomoon.eot?1td3xz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1td3xz') format('truetype'),
+    url('fonts/icomoon.woff?1td3xz') format('woff'),
+    url('fonts/icomoon.svg?1td3xz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-pencil2:before {
+  content: "\e906";
+}
+.icon-file-text:before {
+  content: "\e922";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-key:before {
+  content: "\e98d";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-menu3:before {
+  content: "\e9bf";
+}
+.icon-sina-weibo:before {
+  content: "\ea9a";
+}
+.icon-github:before {
+  content: "\eab0";
+}

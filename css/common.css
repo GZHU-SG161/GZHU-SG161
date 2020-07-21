@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?1td3xz');
+    src:  url('../fonts/icomoon.eot?1td3xz#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?1td3xz') format('truetype'),
+      url('../fonts/icomoon.woff?1td3xz') format('woff'),
+      url('../fonts/icomoon.svg?1td3xz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul li  {
+    list-style: none;
+    /* display: inline; */
+}
+/* 背景 */
+body {
+    background-color: rgb(196, 243, 215);
+}
+/* 版心 */
+.core {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 头部 */
+header {
+    height: 50px;
+    background-color: rgba(167, 209, 147, 0.938);
+    border-radius: 10px;
+}
+/* 头部logo */
+header .logo {
+    float: left;
+    height: 50px;
+    margin-left: 40px;
+}
+header .logo img {
+    height: 100%;
+}
+/* 班级名称 */
+header .webName {
+    float: left;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    line-height: 50px;
+    margin-left: 30px;
+}
+/* 头部导航栏 */
+header .nav {
+    position: relative;
+    float: right;
+    width: 600px;
+    height: 100%;
+}
+/* 导航栏各项 */
+header .nav li {
+    display: inline;
+    margin-left: 30px;
+    line-height: 50px;
+    font-size: 20px;
+}
+/* 宿舍展开 */
+.roomNo {
+    /* display: none; */
+    position: absolute;
+    top: 60px;
+    left: 195px;
+    border-radius: 10px;
+    background-color: rgba(230, 245, 143, 0.493);
+    z-index: 999;
+}
+.roomNo dt {
+    background-color: rgba(167, 209, 147, 0.938);
+    color: rgb(0, 0, 0);
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.roomNo dd {
+    height: 30px;
+    font-size: 20px;
+    text-align: center ;
+    line-height: 30px;
+    border-top: 1px solid rgba(167, 209, 147, 0.938);
+}
+.roomNo .triangle {
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    width: 0;     
+	height: 0;
+	line-height: 0; 
+	font-size: 0;
+    border: 40px solid transparent; 
+    border-bottom-color: rgba(167, 209, 147, 0.938);
+}
+.nav .indexPage:before {
+    font-family: 'icomoon';
+    content: '\e900';
+    padding-right: 10px;
+}
+/* 导航字体图标 */
+.nav .dorm:after ,
+.nav .myPro:after {
+    font-family: 'icomoon';
+    content: '\e9bd';
+    padding-left: 10px;
+}
+/* 项目展开 */
+.mine {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 320px;
+    border-radius: 10px;
+    background-color: rgba(230, 245, 143, 0.493);
+}
+.mine dt {
+    background-color: rgba(167, 209, 147, 0.938);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.mine dd {
+    height: 30px;
+    font-size: 15px;
+    text-align: center ;
+    line-height: 30px;
+    border-top: 1px solid rgba(167, 209, 147, 0.938);
+}
+.mine .triangle {
+    position: absolute;
+    top: -30px;
+    left: 68px;
+    width: 0;     
+	height: 0;
+	line-height: 0; 
+	font-size: 0;
+	border: 15px solid transparent; 
+	border-bottom-color: rgba(167, 209, 147, 0.938);
+}
