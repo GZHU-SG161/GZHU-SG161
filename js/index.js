@@ -126,4 +126,26 @@ window.addEventListener('load', function () {
         arrow_R.click();
     }, 2000);
 
+    //控制风景导航栏
+    var scenNav = document.querySelector('.scenNav');
+    var scenBtn = scenNav.querySelectorAll('a');
+    var scen = document.querySelectorAll('.scen');
+    console.log(scenBtn);
+
+    for (var i=0;i<scenBtn.length;i++){
+        scenBtn[i].setAttribute('index',i);
+        scenBtn[i].addEventListener('click', function(){
+            for (var i=0;i<scenBtn.length;i++){
+                scenBtn[i].className='';
+            }
+            this.className='current';
+            var index = this.getAttribute('index');
+            
+            for(var i=0;i<scen.length;i++){
+                scen[i].style.display = 'none';
+            }
+            scen[index].style.display = 'block';
+        })
+    }
+
 })
