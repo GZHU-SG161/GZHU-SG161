@@ -130,7 +130,7 @@ window.addEventListener('load', function () {
     var scenNav = document.querySelector('.scenNav');
     var scenBtn = scenNav.querySelectorAll('a');
     var scen = document.querySelectorAll('.scen');
-    console.log(scenBtn);
+    
 
     for (var i=0;i<scenBtn.length;i++){
         scenBtn[i].setAttribute('index',i);

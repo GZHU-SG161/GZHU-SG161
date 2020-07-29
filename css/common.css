@@ -202,14 +202,17 @@ header .nav li {
 .sideNav {
     position: fixed;
     top: 50%;
-    right: 80px;
+    right: -70px;
     margin-top: -100px;
     width: 70px;
     height: 280px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;   
     background-color: #a29bfe;
+    z-index: 4;
+}
+.in_sideNav {
+    overflow: hidden;
 }
 .sideNav ul li {
     width: 100%;
@@ -222,6 +225,22 @@ header .nav li {
     background-color: hotpink;
     font-weight: 700;
     text-shadow: 1px 2px 1px #a29bfe;
+}
+.sideNav ul {
+    position: relative;
+}
+.sideNav .showBtn {
+    position: absolute;
+    top: 74px;
+    left: -70px;
+    width: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #a29bfe;
+    font-size: 20px;
+    text-align: center;
+    z-index: 5;
+    cursor: pointer;
 }
 
 footer {

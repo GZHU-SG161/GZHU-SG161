@@ -1,4 +1,4 @@
-// 水平移动
+// 水平移动 
 function animate_horizontal(obj, target, callback) {
     // console.log(callback);  callback = function() {}  调用的时候 callback()
 
