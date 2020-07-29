@@ -26,17 +26,16 @@ ul li  {
 /* 背景 */
 body {
     
-    -webkit-background-size: 50px 50px;
-    -moz-background-size: 50px 50px;
+    /* -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px; */
     background-size: 50px 50px;
     /* 控制条纹的大小 */
-    -moz-box-shadow: 1px 1px 8px gray;
-    -webkit-box-shadow: 1px 1px 8px gray;
+    /* -moz-box-shadow: 1px 1px 8px gray;
+    -webkit-box-shadow: 1px 1px 8px gray; */
     box-shadow: 1px 1px 8px gray;
     
-    background-color: #FF9999
-    ;   
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%,   
+    background-color: #FF9999;   
+    /* background-image: -webkit-gradient(linear, 0 0, 100% 100%,   
                             color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),   
                             color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),   
                             color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),   
@@ -46,7 +45,7 @@ body {
                         transparent 75%, transparent);   
     background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,   
                         transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,   
-                        transparent 75%, transparent);   
+                        transparent 75%, transparent);    */
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,   
                         transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,   
                         transparent 75%, transparent);  
@@ -226,9 +225,6 @@ header .nav li {
     font-weight: 700;
     text-shadow: 1px 2px 1px #a29bfe;
 }
-.sideNav ul {
-    position: relative;
-}
 .sideNav .showBtn {
     position: absolute;
     top: 74px;
@@ -241,6 +237,72 @@ header .nav li {
     text-align: center;
     z-index: 5;
     cursor: pointer;
+}
+
+/* 求支持 */
+.support {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    background-color: blue;
+    z-index: 6;
+    display: none;
+}
+.support img {
+    width: 100%;
+    height: 100%;
+}
+.support .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+.support .close:after {
+    font-family: 'icomoon';
+    content: '\ea0f';
+}
+
+/* 关于网站 */
+.about {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    background-color: blue;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 6;
+    display: none;
+}
+.about img {
+    width: 100%;
+    height: 100%;
+}
+.about .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+.about .close:after {
+    font-family: 'icomoon';
+    content: '\ea0f';
 }
 
 footer {

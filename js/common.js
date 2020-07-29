@@ -97,4 +97,28 @@ window.addEventListener('load', function () {
             alert('暗号错误，请浏览你能看到的页面吧~')
         }
     })
+
+    //配置求支持
+    var support = document.querySelector('.support');
+    var close_s = support.querySelector('.close');
+    // console.log(list[1]);
+    list[1].addEventListener('click', function(){
+        support.style.display = 'block';
+        about.style.display = 'none';
+    })
+    close_s.addEventListener('click', function(){
+        support.style.display = 'none';
+    })
+
+    //配置关于网站
+    var about = document.querySelector('.about');
+    var close_a = about.querySelector('.close');
+    // console.log(list[1]);
+    list[2].addEventListener('click', function(){
+        about.style.display = 'block';
+        support.style.display = 'none';
+    })
+    close_a.addEventListener('click', function(){
+        about.style.display = 'none';
+    })
 })

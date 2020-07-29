@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1td3xz');
-  src:  url('fonts/icomoon.eot?1td3xz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1td3xz') format('truetype'),
-    url('fonts/icomoon.woff?1td3xz') format('woff'),
-    url('fonts/icomoon.svg?1td3xz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jjap9');
+  src:  url('fonts/icomoon.eot?jjap9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jjap9') format('truetype'),
+    url('fonts/icomoon.woff?jjap9') format('woff'),
+    url('fonts/icomoon.svg?jjap9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -54,4 +54,19 @@
 }
 .icon-github:before {
   content: "\eab0";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-edge:before {
+  content: "\eadc";
 }
