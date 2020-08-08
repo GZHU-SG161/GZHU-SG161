@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?1td3xz');
+    src:  url('../fonts/icomoon.eot?1td3xz#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?1td3xz') format('truetype'),
+      url('../fonts/icomoon.woff?1td3xz') format('woff'),
+      url('../fonts/icomoon.svg?1td3xz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+* {
+    /*CSS3盒子模型*/
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+
+/*点击高亮我们需要清除 设置transparent 完成透明*/
+-webkit-tap-highlight-color: transparent;
+
+/*在移动端浏览器默认的外观在IOS上加上这个属性才能给按钮和输入框自定义样式*/
+-webkit-apperance: none;
+}
+
+
+/*禁用长按页面时弹出菜单*/
+img, a { -webkit-touch-callout: none; }
+
+
+/* 头部 */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 200, 200)
+}
+header .title {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 100px;
+}
+header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header .webName {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

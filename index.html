@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <title>生工161班级-首页</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -24,10 +29,10 @@
             <!-- 导航栏 -->
             <div class="nav">
                 <ul>
-                    <li><a href="" class="indexPage">首页</a></li>
-                    <li><a href="">个人</a></li>
-                    <li><a href="" class="dorm">宿舍</a></li>
-                    <li><a href="" class="myPro">我的项目</a></li>
+                    <li><a href="javascript:;" class="indexPage">首页</a></li>
+                    <li><a href="javascript:;">个人</a></li>
+                    <li><a href="javascript:;" class="dorm">宿舍</a></li>
+                    <li><a href="javascript:;" class="myPro">我的项目</a></li>
                     <!-- <li><a class="loginPic">&nbsp;</a> </li> -->
                     <li><a href="javascript:;" class="login">立即登陆</a></li>
                 </ul>
@@ -35,26 +40,26 @@
                 <div class="roomNo">
                     <dl>
                         <dt>女生宿舍</dt>
-                        <a href="">
+                        <a href="javascript:;">
                             <dd>501</dd>
                         </a>
-                        <a href="">
+                        <a href="javascript:;">
                             <dd>502</dd>
                         </a>
-                        <dt><a href=""></a>男生宿舍</dt>
-                        <a href="">
+                        <dt>男生宿舍</dt>
+                        <a href="javascript:;">
                             <dd>706</dd>
                         </a>
-                        <a href="">
+                        <a href="javascript:;">
                             <dd>707</dd>
                         </a>
-                        <a href="">
+                        <a href="javascript:;">
                             <dd>708</dd>
                         </a>
-                        <a href="">
+                        <a href="javascript:;">
                             <dd>709</dd>
                         </a>
-                        <a href="">
+                        <a href="javascript:;">
                             <dd>710</dd>
                         </a>
                     </dl>
@@ -67,7 +72,7 @@
                         <a href="./bilibili/bilibili.html">
                             <dd>仿哔哩哔哩</dd>
                         </a>
-                        <a href="">
+                        <a href="javascript:;">
                             <dd>仿京东</dd>
                         </a>
                     </dl>
@@ -100,12 +105,21 @@
     <!-- 求支持 -->
     <div class="support">
         <div class="close"></div>
-        <img src="./images/5f9a39181b7c8b810c0845f96f4735e42349642c.jpg@518w_1e_1c.jpg" alt="">
+        <button class="wxBtn current">微信</button><button class="zfbBtn">支付宝</button>
+        <h1>打赏口饭吃吧</h1>
+        <img src="./images/zfbPay.jpg" alt="" id="zfbImg">
+        <img src="./images/wxPay.jpg" alt="" id="wxImg">
     </div>
-     <!-- 关于网站 -->
-     <div class="about">
+    <!-- 关于网站 -->
+    <div class="about">
         <div class="close"></div>
-        <img src="./images/ea61295ddc22a2ec0ac287da3ab0399cc3f38c0f.jpg@518w_1e_1c.jpg" alt="">
+        <h1>关于这个网站</h1>
+        <p>这是一个部署在Github/Gitee上的网站<br>
+            一般来说是可以永久保存的<br>
+            由于没有购买服务器，所以只有静态网页<br>
+            （实际上还没搞懂ajax，所以做不了动态）<br>
+            但是保存图片之类的，还是绰绰有余了</p>
+        <img src="./images/doudou.png" alt="">
     </div>
     <!-- 内容版心 -->
     <div class="core">
@@ -129,7 +143,48 @@
             </div>
             <!-- 留言板 -->
             <div class="farewellMes">
-                离别赠言
+                <div class="insideBox">
+                    <div class="message">
+                        <h3>黄小琪</h3>
+                        <p>惟愿大家所得皆所愿 以梦为马 不负韶华 前程似锦 归来仍是少年！</p>
+                    </div>
+                    <div class="message">
+                        <h3>邱洁瑜</h3>
+                        <p>自由而节制，独立且昂扬，共勉之。祝各位飞黄腾达！开心幸福！</p>
+                    </div>
+                    <div class="message">
+                        <h3>卢洪康</h3>
+                        <p>希望大家在社会这个大染缸中沉浮时能不忘初心</p>
+                    </div>
+                    <div class="message">
+                        <h3>王正宇</h3>
+                        <p>『Hold Us Together』——WILD</p>
+                    </div>
+                    <div class="message">
+                        <h3>李树强</h3>
+                        <p>愿你我的肩都担起草长莺飞和清风明月(⑉• •⑉)‥♡</p>
+                    </div>
+                    <div class="message">
+                        <h3>杨斐康</h3>
+                        <p>城南花已开，似是故人来。岁月门轻掩，芳华旧梦在。</p>
+                    </div>
+                    <div class="message">
+                        <h3>林浩南</h3>
+                        <p>没来得及好好学习就毕业了，社畜不易，最后的自由青春时光好好珍惜哈。</p>
+                    </div>
+                    <div class="message">
+                        <h3>余志英</h3>
+                        <p>请保持那一份热爱  奔赴下一场山海！</p>
+                    </div>
+                    <div class="message">
+                        <h3>吴文杰</h3>
+                        <p>狗富贵，勿相旺旺旺</p>
+                    </div>
+                    <div class="message">
+                        <h3>赵一鸣	</h3>
+                        <p>纸上得来终觉浅，绝知此事要躬行。</p>
+                    </div>
+                </div>
             </div>
             <!-- 展示风景 -->
             <div class="showSchool">
@@ -226,12 +281,14 @@
         <div class="core">
 
             <div class="copyright">
-                地址：广州大学城广州大学生活区B15-707 邮编：510280 网络: gzhu-sg161.github.io <br>
-                粤ICP备 京公网安备
+                <p>地址：广州大学城广州大学生活区B15-707 邮编：510280 网络: gzhu-sg161.github.io <br>
+                粤ICP备 京公网安备<br></p>
+                <span>Github</span><span>新浪微博</span>
             </div>
 
         </div>
     </footer>
+
 </body>
 
 </html>

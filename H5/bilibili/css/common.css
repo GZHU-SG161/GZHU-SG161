@@ -1,0 +1,147 @@
+.shortcut {
+    background-color: #F1F1F1; 
+    line-height: 56px;
+    height: 56px;
+    font-size: 15px;
+}
+.shortcut .nav-left img {
+    width: 70px;
+    height: 32px;
+}
+.shortcut .nav-left {
+    float: left;
+    height: 100%;
+    
+}
+.nav-left ul li {
+    float: left;
+    margin-left: 20px;
+}
+.nav-search {
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-search .search-box {
+    width: 362px;
+    height: 34px;
+}
+.nav-right {
+    float: right;
+}
+.nav-right ul li {
+    float: left;
+    margin-right: 20px;
+}
+.nav-right ul li span{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid red;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.nav-right ul li:last-child{
+    width: 100px;
+    height: 36px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 36px;
+    background-color: pink;
+}
+
+.w {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+header .title {
+    position: relative;
+    height: 200px;
+    background-image: url('../images/bc-img.webp') ;
+}
+header .title .fl {
+    /* display: inline-block; */
+    padding-top: 120px;
+}
+header .title .fl .head-img {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-left: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: pink;
+}
+header .title .con {
+    float: left;
+}
+header .title .name {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+}
+header .title .submit {
+    font-size: 10px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+header .title .submit input {
+    color: white;
+    background-color: rgba(255, 0, 0, 0);
+}
+header .title .fr {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    float: right;
+}
+header .title .fr ul li {
+    float: left;
+    margin-right: 30px;
+    
+}
+header .title .fr .focus {
+    width: 75px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    background-color: hotpink;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+header .title .fr .send {
+    width: 75px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    background-color: hotpink;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+header .nav {
+    height: 66px;
+    background-color: pink;
+}
+header .nav ul li {
+    float: left;
+    font-size: 15px;
+    text-align: center;
+    line-height: 66px;
+    margin-left: 20px;
+}
+header section {
+    float: left;
+    line-height: 66px;
+}
+header .search {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+header .showNum {
+    float: right;
+}

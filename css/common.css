@@ -26,30 +26,15 @@ ul li  {
 /* 背景 */
 body {
     
-    /* -webkit-background-size: 50px 50px;
-    -moz-background-size: 50px 50px; */
-    background-size: 50px 50px;
+    /* background-size: 50px 50px;
     /* 控制条纹的大小 */
-    /* -moz-box-shadow: 1px 1px 8px gray;
-    -webkit-box-shadow: 1px 1px 8px gray; */
-    box-shadow: 1px 1px 8px gray;
+    /* box-shadow: 1px 1px 8px gray;
     
     background-color: #FF9999;   
-    /* background-image: -webkit-gradient(linear, 0 0, 100% 100%,   
-                            color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),   
-                            color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),   
-                            color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),   
-                            to(transparent));   
-    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,   
-                        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,   
-                        transparent 75%, transparent);   
-    background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,   
-                        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,   
-                        transparent 75%, transparent);    */
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,   
                         transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,   
-                        transparent 75%, transparent);  
-    /* background-color: #aaa3a1; */
+                        transparent 75%, transparent);   */ 
+    background-color: #F4F5F7;
 }
 /* 版心 */
 .core {
@@ -60,19 +45,24 @@ body {
 header {
     height: 50px;
     color: #FFFFFF;
-    background-color: #666699;
-    border-radius: 10px;
+    /* background-color: #666699; */
+    background-color: rgb(204, 200, 200);
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 #headNav {
     position: sticky;
     top: 0px;
-    z-index: 4;
+    z-index: 7;
+    width: auto;
+    box-shadow: 0 1px 10px 1px black;
 }
 /* 头部logo */
 header .logo {
     float: left;
     height: 50px;
     margin-left: 40px;
+    background-color: rgb(204, 200, 200);
 }
 header .logo img {
     height: 100%;
@@ -85,6 +75,7 @@ header .webName {
     font-weight: bolder;
     line-height: 50px;
     margin-left: 30px;
+    color: black;
 }
 /* 头部导航栏 */
 header .nav {
@@ -94,7 +85,7 @@ header .nav {
     height: 100%;
 }
 header .nav a {
-    color: #FFFFFF;
+    color: black;
 }
 .nav ul {
     height: 50px;
@@ -113,11 +104,11 @@ header .nav li {
     top: -300px;
     left: 195px;
     border-radius: 10px;
-    background-color: #666699;
+    background-color: white;
     z-index: 2;
 }
 .roomNo dt {
-    background-color: #FFCCCC;
+    background-color: rgb(204, 200, 200);
     color: rgb(0, 0, 0);
     width: 80px;
     height: 30px;
@@ -129,7 +120,7 @@ header .nav li {
     font-size: 20px;
     text-align: center ;
     line-height: 30px;
-    border-top: 1px solid rgba(249, 255, 247, 0.938);
+    border-top: 1px solid rgb(144, 145, 144);
 }
 .roomNo .triangle {
     position: absolute;
@@ -144,6 +135,7 @@ header .nav li {
 .nav .indexPage:before {
     font-family: 'icomoon';
     content: '\e900';
+    font-size: 25px;
     padding-right: 10px;
 }
 /* 导航字体图标 */
@@ -160,11 +152,11 @@ header .nav li {
     top: -100px;
     left: 320px;
     border-radius: 10px;
-    background-color: #666699;
+    background-color: white;
     z-index: 2;
 }
 .mine dt {
-    background-color: #FFCCCC;
+    background-color: rgb(204, 200, 200);
     color: rgb(0, 0, 0);
     width: 100px;
     height: 30px;
@@ -176,7 +168,7 @@ header .nav li {
     font-size: 15px;
     text-align: center ;
     line-height: 30px;
-    border-top: 1px solid rgba(144, 145, 144, 0.938);
+    border-top: 1px solid rgb(144, 145, 144);
 }
 .mine .triangle {
     position: absolute;
@@ -194,7 +186,7 @@ header .nav li {
     content: '\e971';
     font-size: 30px;
     border: 3px solid white;
-    background-color: #666699;
+    background-color: rgb(204, 200, 200);
     border-radius: 15px;
 }
 
@@ -248,13 +240,41 @@ header .nav li {
     height: 500px;
     margin-top: -250px;
     margin-left: -250px;
-    background-color: blue;
+    text-align: center;
+    border-radius: 20px;
+    
+    background-color: rgba(255, 105, 180, 0.781);
     z-index: 6;
     display: none;
 }
-.support img {
-    width: 100%;
-    height: 100%;
+.support h1 {
+    margin-top: 20px;
+}
+.support .wxBtn {
+    position: absolute;
+    top: 70px;
+    left: 180px;
+    font-size: 20px;
+    
+    cursor: pointer;
+}
+.support .current {
+    color: red;
+    box-shadow: 0px 5px 10px  black;
+}
+.support .zfbBtn {
+    position: absolute;
+    top: 70px;
+    right: 170px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.support  img {
+    position: absolute;
+    left: 80px;
+    bottom: 30px;
+    width: 70%;
+    height: 70%;
 }
 .support .close {
     position: absolute;
@@ -280,15 +300,26 @@ header .nav li {
     height: 500px;
     margin-top: -250px;
     margin-left: -250px;
-    background-color: blue;
+    background-color: rgba(255, 192, 203, 0.9);
     border-radius: 20px;
+    text-align: center;
     overflow: hidden;
     z-index: 6;
     display: none;
 }
+.about h1 {
+    margin-top: 40px;
+}
+.about p {
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 50px;
+}
 .about img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 134px;
 }
 .about .close {
     position: absolute;
@@ -306,10 +337,26 @@ header .nav li {
 }
 
 footer {
-
+    width: auto;
     height: 100px;
-    background-color: #666699;
+    background-color: rgb(204, 200, 200);
     margin-top: 50px;
     padding-top: 30px;
     text-align: center;
+}
+footer .copyright span {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+footer .copyright span:first-of-type:before {
+    font-family: 'icomoon';
+    content: '\eab0';
+    margin-right: 5px;
+}
+footer .copyright span:last-of-type:before {
+    font-family: 'icomoon';
+    content: '\ea9a';
+    margin-right: 5px;
 }
